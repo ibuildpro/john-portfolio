@@ -2,9 +2,9 @@ import { Link } from "@tanstack/react-router";
 import portrait from "@/assets/portrait.png";
 
 const proofPoints = [
-  { label: "Architecture", value: "ERP, SaaS, AI workflows" },
-  { label: "Delivery", value: "Secure platforms for real operations" },
-  { label: "Standard", value: "Auditable, maintainable systems" },
+  { label: "Architecture", value: "Multi-Tenant ERP and SaaS platforms" },
+  { label: "Isolation", value: "Tenant-aware data, roles, and permissions" },
+  { label: "Standard", value: "Auditable systems built to scale safely" },
 ] as const;
 
 export function Hero() {
@@ -30,18 +30,21 @@ export function Hero() {
         <div className="max-w-[48rem] reveal">
           <div className="flex items-center gap-3 eyebrow text-[0.62rem] tracking-[0.14em] text-accent-gold sm:text-[0.72rem] sm:tracking-[0.18em]">
             <span className="inline-block h-px w-8 shrink-0 bg-accent-gold sm:w-10" />
-            <span className="sm:hidden">Senior Engineer</span>
-            <span className="hidden sm:inline">Senior Software Engineer - Enterprise Systems</span>
+            <span className="sm:hidden">Multi-Tenant Systems</span>
+            <span className="hidden sm:inline">
+              Multi-Tenant ERP - SaaS Architecture - Enterprise Systems
+            </span>
           </div>
 
           <h1 className="mt-5 max-w-[13ch] font-display text-[2.65rem] leading-[1.02] text-balance sm:mt-6 sm:text-6xl md:text-7xl lg:text-[4.45rem]">
-            Senior engineering for{" "}
-            <span className="text-gradient whitespace-nowrap">AI-native</span> ERP and SaaS.
+            <span className="text-gradient whitespace-nowrap">Multi-Tenant</span> ERP and AI-native
+            SaaS.
           </h1>
 
           <p className="mt-5 max-w-[39rem] text-[0.98rem] leading-7 text-foreground/75 sm:mt-7 sm:text-base sm:leading-8 md:text-lg">
-            I build secure, auditable software for industries where workflows, reporting,
-            permissions, and compliance have to hold under real operational pressure.
+            I design secure, tenant-aware platforms where data isolation, role-based access,
+            workflows, reporting, and compliance hold up across many customers without sacrificing
+            speed or maintainability.
           </p>
 
           <div className="mt-8 grid max-w-[22rem] grid-cols-2 items-center gap-3 sm:mt-10 sm:flex sm:max-w-none sm:flex-wrap">

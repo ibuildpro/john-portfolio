@@ -8,19 +8,20 @@ import { ProjectCard } from "@/components/site/ProjectCard";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Johnathan Hyde — AI-native ERP & SaaS for complex industries" },
+      { title: "Johnathan Hyde — Multi-Tenant ERP & AI-native SaaS Architecture" },
       {
         name: "description",
         content:
-          "Senior engineer building AI-native ERP and SaaS platforms for healthcare, finance, insurance, manufacturing, and education — with auditability and compliance built in.",
+          "Senior engineer building secure Multi-Tenant ERP and AI-native SaaS platforms for healthcare, finance, insurance, manufacturing, and education.",
       },
       {
         property: "og:title",
-        content: "Johnathan Hyde — AI-native ERP & SaaS for complex industries",
+        content: "Johnathan Hyde — Multi-Tenant ERP & AI-native SaaS Architecture",
       },
       {
         property: "og:description",
-        content: "Premium AI-native ERP and SaaS for regulated, operationally complex industries.",
+        content:
+          "Secure Multi-Tenant ERP and AI-native SaaS for regulated, operationally complex industries.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -33,7 +34,7 @@ export const Route = createFileRoute("/")({
 const credibility = [
   { k: "16+", v: "Years engineering" },
   { k: "15", v: "Reference platforms" },
-  { k: "ERP · AI · SaaS", v: "Domain depth", muted: true },
+  { k: "Multi-Tenant", v: "ERP / SaaS depth", muted: true },
   { k: ".NET · TS · Py", v: "Polyglot stack", muted: true },
 ];
 
