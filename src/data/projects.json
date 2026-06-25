@@ -1,0 +1,167 @@
+[
+  {
+    "slug": "tangle",
+    "name": "Tangle",
+    "url": "https://www.tangle.io/",
+    "short": "AI-native ERP for SMB manufacturers — workflows, screens, reports, and production automations teams reshape around their actual process.",
+    "full": "Tangle is an AI-native ERP for small and mid-sized manufacturers that lets teams reshape workflows, screens, reports, and automations around their actual production process. Its core value is flexible manufacturing operations rather than a generic ERP template — auditability, controlled workflow changes, traceable operations, custom dashboards, and ISO-style quality management expectations.",
+    "category": "Manufacturing ERP",
+    "tags": ["ERP", "Manufacturing", "AI", "Workflow"],
+    "compliance": ["Audit Trails", "RBAC", "ISO 9001"],
+    "image": "tangle.png"
+  },
+  {
+    "slug": "rillet",
+    "name": "Rillet",
+    "url": "https://www.rillet.com/",
+    "short": "AI-native finance ERP automating month-end close, revenue recognition, SaaS metrics, and audit-ready accounting workflows.",
+    "full": "Rillet is an AI-native finance ERP for scaling companies that automates month-end close, revenue recognition, SaaS metrics, financial reporting, and controls directly from the general ledger. Built for projects where accounting workflows, permissions, audit trails, and ERP integrations matter — SOC 1 Type II for financial reporting controls and SOC 2 Type II for security, availability, and confidentiality.",
+    "category": "Finance & Accounting AI",
+    "tags": ["Finance", "ERP", "AI", "SaaS"],
+    "compliance": ["SOC 1", "SOC 2", "Audit Trails"],
+    "image": "rillet.png"
+  },
+  {
+    "slug": "keragon",
+    "name": "Keragon",
+    "url": "https://www.keragon.com/",
+    "short": "HIPAA-compliant healthcare automation connecting EHR, CRM, forms, billing, and PHI-related workflows.",
+    "full": "Keragon is a HIPAA-compliant healthcare automation platform built for clinics, digital health startups, and care teams that need secure workflow automation across EHRs, CRMs, forms, billing, messaging, and internal tools. Compliance story: HIPAA, PHI-safe automation, healthcare integrations, and BAA expectations.",
+    "category": "Healthcare Automation",
+    "tags": ["Healthcare", "Automation", "Integrations", "AI"],
+    "compliance": ["HIPAA", "BAA", "RBAC"],
+    "image": "keragon.png"
+  },
+  {
+    "slug": "fulcrum",
+    "name": "Fulcrum",
+    "url": "https://fulcrumpro.com/",
+    "short": "Cloud manufacturing software for shop-floor scheduling, live production data, operator workflows, and paperless operations.",
+    "full": "Fulcrum is cloud manufacturing software that connects shop-floor activity, scheduling, production tracking, job costing, inventory movement, and operator workflows in one live system. Strong reference for custom ERP, MRP, and MES projects where real-time operational data matters more than static reporting.",
+    "category": "Manufacturing ERP",
+    "tags": ["ERP", "MES", "MRP", "Manufacturing", "SaaS"],
+    "compliance": ["Audit Trails", "ISO 9001", "RBAC"],
+    "image": "fulcrum.png"
+  },
+  {
+    "slug": "tellescope",
+    "name": "Tellescope",
+    "url": "https://www.tellescope.com/",
+    "short": "HIPAA-compliant digital health CRM and care workflow platform for patient communication and virtual care operations.",
+    "full": "Tellescope is a unified digital health platform and HIPAA-compliant CRM for modern healthcare teams — patient communication, virtual care delivery, workflow automation, care coordination, and custom patient pathways. A strong reference for multi-tenant healthcare SaaS combining CRM, care workflows, tasks, messaging, and integrations.",
+    "category": "Healthcare Automation",
+    "tags": ["Healthcare", "CRM", "SaaS", "Multi-tenant"],
+    "compliance": ["HIPAA", "BAA", "RBAC"],
+    "image": "tellescope.png"
+  },
+  {
+    "slug": "covergo",
+    "name": "CoverGo",
+    "url": "https://covergo.com/",
+    "short": "AI and no-code insurance platform for product configuration, policy administration, claims automation, and insurer operations.",
+    "full": "CoverGo is an AI and no-code insurance platform for health, life, and P&C insurers — configurable products, policy administration, claims workflows, distribution portals, APIs, and operational automation. Public security positioning: ISO 27001 certification and SOC 2 Type I compliance.",
+    "category": "Insurance Platforms",
+    "tags": ["Insurance", "AI", "No-code", "ERP"],
+    "compliance": ["ISO 27001", "SOC 2"],
+    "image": "covergo.png"
+  },
+  {
+    "slug": "ai-insurance",
+    "name": "AI Insurance",
+    "url": "https://aiinsurance.io/",
+    "short": "AI-powered insurance management for underwriting, submissions intake, claims parsing, billing, and program operations.",
+    "full": "AI Insurance is an all-in-one insurance management platform for MGAs, RRGs, TPAs, captives, and program managers. Uses AI to automate underwriting, claims, submission processing, billing, bordereaux, document intake, permissions, and program operations. Compliance footer: HIPAA and SOC 2 Type 2.",
+    "category": "Insurance Platforms",
+    "tags": ["Insurance", "AI", "Claims", "ERP"],
+    "compliance": ["HIPAA", "SOC 2", "RBAC"],
+    "image": "insurance.png"
+  },
+  {
+    "slug": "numeric",
+    "name": "Numeric",
+    "url": "https://www.numeric.io/",
+    "short": "AI close automation platform unifying close management, reconciliation, reporting, and audit workflows.",
+    "full": "Numeric is an AI close automation platform for accounting teams — close management, account reconciliation, reporting, cash visibility, review workflows, and finance controls. A clean reference for SaaS backend work involving approvals, audit readiness, ERP data sync, and accounting process automation.",
+    "category": "Finance & Accounting AI",
+    "tags": ["Finance", "AI", "Automation", "SaaS"],
+    "compliance": ["SOC 2", "Audit Trails", "RBAC"],
+    "image": "numeric.png"
+  },
+  {
+    "slug": "classe365",
+    "name": "Classe365",
+    "url": "https://www.classe365.com/",
+    "short": "School management SaaS — admissions, SIS, academics, LMS, CRM, fees, and student lifecycle operations.",
+    "full": "Classe365 is a school management SaaS covering admissions, SIS, academics, LMS, CRM, fees, student communication, parent engagement, and institutional operations. Compliance materials reference FERPA, GDPR, COPPA, and California privacy law.",
+    "category": "Education ERP",
+    "tags": ["Education", "ERP", "SaaS", "Multi-tenant"],
+    "compliance": ["FERPA", "GDPR", "COPPA"],
+    "image": "classe3.png"
+  },
+  {
+    "slug": "omnimd",
+    "name": "OmniMD AI Front Desk",
+    "url": "https://omnimd.com/ai-front-desk/",
+    "short": "AI medical receptionist — calls, scheduling, intake, check-in, insurance verification, and EHR-adjacent workflows.",
+    "full": "OmniMD AI Front Desk is an AI medical receptionist product connected to OmniMD's broader EHR, RCM, practice management, and digital health ecosystem. Maps to HIPAA-sensitive workflows, EHR-adjacent integrations, role-based access, audit logging, secure patient communication, and operational automation for clinics.",
+    "category": "Healthcare Automation",
+    "tags": ["Healthcare", "AI", "Voice", "EHR"],
+    "compliance": ["HIPAA", "Audit Trails", "RBAC"],
+    "image": "omii.png"
+  },
+  {
+    "slug": "katana",
+    "name": "Katana",
+    "url": "https://katanamrp.com/",
+    "short": "Cloud inventory and manufacturing SaaS — real-time stock, production tracking, sales orders, and multi-location operations.",
+    "full": "Katana is a cloud inventory and manufacturing platform for product businesses — real-time stock visibility, production tracking, sales order management, purchasing, outsourced production coordination, accounting integrations, and multi-location operations. Strong multi-tenant manufacturing SaaS reference.",
+    "category": "Manufacturing ERP",
+    "tags": ["Manufacturing", "MRP", "SaaS", "Multi-tenant"],
+    "compliance": ["Audit Trails", "RBAC"],
+    "image": "katana.png"
+  },
+  {
+    "slug": "sprout-ai",
+    "name": "Sprout.ai",
+    "url": "https://sprout.ai/",
+    "short": "AI insurance claims automation — claims processing, coverage checking, fraud detection, and core system integrations.",
+    "full": "Sprout.ai is an AI insurance claims automation platform built to speed up claims processing, policy coverage checking, fraud detection, and decision support across the claims lifecycle — insurance-trained AI, document processing, NLP, LLMs, and integrations with core insurance platforms.",
+    "category": "Insurance Platforms",
+    "tags": ["Insurance", "AI", "Claims", "NLP"],
+    "compliance": ["SOC 2", "Audit Trails"],
+    "image": "sprout.png"
+  },
+  {
+    "slug": "openeducat",
+    "name": "OpenEduCat",
+    "url": "https://openeducat.org/",
+    "short": "Open-source education ERP — student records, enrollment, attendance, grades, fees, LMS, AI tools, RBAC, consent, and audit trails.",
+    "full": "OpenEduCat is an open-source education ERP for schools, colleges, and universities — student records, admissions, enrollment, attendance, grading, fees, LMS, communication, and AI-supported academic workflows. References FERPA, GDPR compatibility, student consent workflows, immutable audit logs, RBAC, and optional on-premise deployment.",
+    "category": "Education ERP",
+    "tags": ["Education", "ERP", "AI", "Open Source"],
+    "compliance": ["FERPA", "GDPR", "Audit Trails", "RBAC"],
+    "image": "openeducat.png"
+  },
+  {
+    "slug": "basis",
+    "name": "Basis",
+    "url": "https://www.getbasis.ai/",
+    "short": "AI accounting agent platform for firms — CAS, tax, audit, advisory workflows, with review-ready human handoffs.",
+    "full": "Basis is an AI accounting agent platform for accounting firms — runs CAS, tax, audit, and advisory workflows end-to-end before handing finished work to humans for review. SOC 2-style controls, audit trails, access management, encryption, data handling restrictions, and evidence quality for firm-level review.",
+    "category": "Finance & Accounting AI",
+    "tags": ["Finance", "AI Agents", "Accounting"],
+    "compliance": ["SOC 2", "Audit Trails", "RBAC"],
+    "image": "basis.png"
+  },
+  {
+    "slug": "awell",
+    "name": "Awell",
+    "url": "https://awellhealth.com/platform",
+    "short": "Healthcare care-flow orchestration — design, launch, and improve automated clinical workflows via drag-and-drop or AI prompts.",
+    "full": "Awell is a healthcare care-flow orchestration platform that lets clinical, product, and operations teams design, launch, operate, and improve automated care flows using drag-and-drop tools or natural language AI prompts. HIPAA-aware healthcare operations, patient safety governance, auditability, and controlled deployment of workflows and AI agents.",
+    "category": "Healthcare Automation",
+    "tags": ["Healthcare", "Workflow", "AI", "Orchestration"],
+    "compliance": ["HIPAA", "Audit Trails", "RBAC"],
+    "image": "awell.png"
+  }
+]

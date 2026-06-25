@@ -1,0 +1,22 @@
+{
+  "name": "Johnathan Hyde",
+  "short_name": "JH",
+  "description": "Senior software engineer building enterprise AI SaaS, ERP, and workflow systems people can trust.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05070a",
+  "theme_color": "#05070a",
+  "icons": [
+    {
+      "src": "/logo-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
