@@ -6,8 +6,8 @@ import insuranceImage from "@/assets/projects/insurance.png?url";
 import katanaImage from "@/assets/projects/katana.png?url";
 import numericImage from "@/assets/projects/numeric.png?url";
 import rilletImage from "@/assets/projects/rillet.png?url";
-import tangleImage from "@/assets/projects/tangle.png?url";
 import tellescopeImage from "@/assets/projects/tellescope.png?url";
+import zandaHealthImage from "@/assets/projects/zanda-health.png?url";
 
 type Project = {
   slug: string;
@@ -30,7 +30,7 @@ const projectImages: Record<string, string> = {
   "katana.png": katanaImage,
   "numeric.png": numericImage,
   "rillet.png": rilletImage,
-  "tangle.png": tangleImage,
+  "zanda-health.png": zandaHealthImage,
   "tellescope.png": tellescopeImage,
 };
 

@@ -1,14 +1,14 @@
 [
   {
-    "slug": "tangle",
-    "name": "Tangle",
-    "url": "https://www.tangle.io/",
-    "short": "AI-native ERP for SMB manufacturers, with workflows, screens, reports, and production automation shaped around real operations.",
-    "full": "Tangle is an AI-native ERP for small and mid-sized manufacturers that lets teams reshape workflows, screens, reports, and automations around their actual production process. Its value is flexible manufacturing operations rather than a generic ERP template: auditability, controlled workflow changes, traceable operations, custom dashboards, and ISO-style quality management expectations.",
-    "category": "Manufacturing ERP",
-    "tags": ["ERP", "Manufacturing", "AI", "Workflow"],
-    "compliance": ["Audit Trails", "RBAC", "ISO 9001"],
-    "image": "tangle.png"
+    "slug": "zanda-health",
+    "name": "Zanda Health",
+    "url": "https://zandahealth.com/",
+    "short": "All-in-one healthcare practice management software for scheduling, client records, treatment notes, reminders, invoicing, payments, and clinic operations.",
+    "full": "Zanda Health is an all-in-one practice management platform for allied health clinics, mental health practices, and healthcare teams that need scheduling, client management, treatment notes, reminders, invoicing, payments, telehealth, and operational reporting in one system. It is useful as a reference for healthcare SaaS projects involving clinic operations, patient communication, secure documentation, user permissions, billing workflows, and multi-location practice management. Its compliance story includes HIPAA, GDPR, ISO 27001 certification, BAA expectations, and secure healthcare data handling.",
+    "category": "Healthcare Automation",
+    "tags": ["Healthcare", "Practice Management", "Scheduling", "Billing"],
+    "compliance": ["HIPAA", "GDPR", "ISO 27001", "BAA", "User Permissions"],
+    "image": "zanda-health.png"
   },
   {
     "slug": "rillet",
