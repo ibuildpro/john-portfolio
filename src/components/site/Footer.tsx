@@ -6,11 +6,11 @@ export function Footer() {
       <div className="container-prose py-14 grid gap-10 md:grid-cols-3 items-start">
         <div>
           <img
-            src="/logo-wordmark.svg"
+            src="/logo.png"
             alt="Johnathan Hyde"
-            width={245}
-            height={60}
-            className="h-12 w-auto max-w-[240px]"
+            width={2400}
+            height={600}
+            className="h-14 w-auto max-w-[280px] object-contain"
           />
           <p className="mt-2 text-sm text-muted-foreground max-w-xs">
             Building AI-native ERP and SaaS for healthcare, finance, insurance, manufacturing, and

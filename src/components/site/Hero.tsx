@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import portrait from "@/assets/portrait.png";
 
 const proofPoints = [
   { label: "Architecture", value: "Multi-Tenant ERP and SaaS platforms" },
@@ -12,12 +11,21 @@ export function Hero() {
     <section className="relative isolate min-h-svh w-full overflow-hidden bg-background">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[linear-gradient(135deg,oklch(0.075_0.006_70)_0%,oklch(0.12_0.008_75)_48%,oklch(0.18_0.014_78)_100%)]" />
-        <img
-          src={portrait}
-          alt=""
+        <div
           aria-hidden="true"
-          className="absolute top-[24svh] right-[-46vw] h-[74svh] w-[124vw] object-contain object-right opacity-22 grayscale-[0.28] saturate-[0.68] contrast-[1.08] mix-blend-luminosity [mask-image:linear-gradient(90deg,transparent_0%,black_40%,black_78%,transparent_100%)] sm:top-[12vh] sm:right-[-34vw] sm:h-[90svh] sm:w-[104vw] sm:opacity-30 md:top-[4vh] md:right-[-18vw] md:h-[96svh] md:w-[78vw] md:opacity-42 lg:right-[-10vw] lg:w-[66vw] xl:right-[-4vw] xl:w-[58vw]"
-        />
+          className="absolute top-[18svh] right-[-28vw] h-[58svh] w-[92vw] rounded-[2px] border border-accent-gold/10 bg-[linear-gradient(135deg,oklch(0.22_0.012_76/0.18),transparent_62%)] opacity-60 [mask-image:linear-gradient(90deg,transparent_0%,black_42%,black_82%,transparent_100%)] sm:right-[-22vw] md:top-[12svh] md:right-[-12vw] md:h-[70svh] md:w-[58vw] lg:right-[-6vw] lg:w-[50vw]"
+        >
+          <div className="absolute inset-8 border border-border-strong/35" />
+          <div className="absolute inset-x-14 top-[18%] h-px bg-gradient-to-r from-transparent via-accent-gold/60 to-transparent" />
+          <div className="absolute inset-x-14 top-[39%] h-px bg-gradient-to-r from-transparent via-border-strong to-transparent" />
+          <div className="absolute inset-x-14 top-[60%] h-px bg-gradient-to-r from-transparent via-border-strong to-transparent" />
+          <div className="absolute inset-y-14 left-[28%] w-px bg-gradient-to-b from-transparent via-accent-gold/35 to-transparent" />
+          <div className="absolute inset-y-14 left-[58%] w-px bg-gradient-to-b from-transparent via-border-strong to-transparent" />
+          <div className="absolute left-[12%] top-[13%] h-2 w-2 rounded-full bg-accent-gold" />
+          <div className="absolute left-[41%] top-[34%] h-2 w-2 rounded-full bg-accent-gold/70" />
+          <div className="absolute left-[72%] top-[55%] h-2 w-2 rounded-full bg-accent-gold/60" />
+          <div className="absolute right-[14%] bottom-[16%] h-px w-28 bg-accent-gold/50" />
+        </div>
         <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(0.075_0.006_70/0.98)_0%,oklch(0.075_0.006_70/0.86)_34%,oklch(0.075_0.006_70/0.48)_62%,oklch(0.075_0.006_70/0.78)_100%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_76%_34%,oklch(0.76_0.075_82/0.18)_0%,transparent_42%),radial-gradient(ellipse_at_18%_70%,oklch(0.62_0.04_210/0.13)_0%,transparent_48%)]" />
         <div className="absolute inset-0 grid-lines opacity-[0.025]" />

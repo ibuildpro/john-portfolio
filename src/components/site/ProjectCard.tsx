@@ -1,3 +1,14 @@
+import awellImage from "@/assets/projects/awell.png?url";
+import classe365Image from "@/assets/projects/classe3.png?url";
+import covergoImage from "@/assets/projects/covergo.png?url";
+import fulcrumImage from "@/assets/projects/fulcrum.png?url";
+import insuranceImage from "@/assets/projects/insurance.png?url";
+import katanaImage from "@/assets/projects/katana.png?url";
+import numericImage from "@/assets/projects/numeric.png?url";
+import rilletImage from "@/assets/projects/rillet.png?url";
+import tangleImage from "@/assets/projects/tangle.png?url";
+import tellescopeImage from "@/assets/projects/tellescope.png?url";
+
 type Project = {
   slug: string;
   name: string;
@@ -10,11 +21,18 @@ type Project = {
   image: string;
 };
 
-const projectImages = import.meta.glob<string>("/src/assets/projects/*", {
-  eager: true,
-  query: "?url",
-  import: "default",
-});
+const projectImages: Record<string, string> = {
+  "awell.png": awellImage,
+  "classe3.png": classe365Image,
+  "covergo.png": covergoImage,
+  "fulcrum.png": fulcrumImage,
+  "insurance.png": insuranceImage,
+  "katana.png": katanaImage,
+  "numeric.png": numericImage,
+  "rillet.png": rilletImage,
+  "tangle.png": tangleImage,
+  "tellescope.png": tellescopeImage,
+};
 
 type ProjectCardProps = {
   project: Project;
@@ -22,7 +40,7 @@ type ProjectCardProps = {
 };
 
 function ProjectCard({ project, onOpen }: ProjectCardProps) {
-  const imageSrc = projectImages[`/src/assets/projects/${project.image}`];
+  const imageSrc = projectImages[project.image];
   const previewImage = imageSrc ? (
     <img
       src={imageSrc}

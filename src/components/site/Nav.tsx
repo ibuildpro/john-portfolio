@@ -7,8 +7,9 @@ const links = [
   { to: "/experience", label: "Experience" },
   { to: "/skills", label: "Skills" },
   { to: "/projects", label: "Projects" },
-  { to: "/contact", label: "Contact" },
 ] as const;
+
+const mobileLinks = [...links, { to: "/blogs", label: "Blogs" }] as const;
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,24 +33,24 @@ export function Nav() {
       <div className="container-prose flex h-[72px] items-center justify-between md:h-20">
         <Link to="/" className="group flex items-center" aria-label="Johnathan Hyde Home">
           <img
-            src="/logo-icon.svg"
+            src="/icon.png"
             alt=""
             aria-hidden="true"
-            width={48}
-            height={48}
-            className="h-11 w-11 sm:hidden"
+            width={500}
+            height={500}
+            className="h-11 w-11 object-contain sm:hidden"
           />
           <img
-            src="/logo-wordmark.svg"
+            src="/logo.png"
             alt=""
             aria-hidden="true"
-            width={1180}
-            height={260}
-            className="hidden h-14 w-auto max-w-[260px] sm:block"
+            width={2400}
+            height={600}
+            className="hidden h-14 w-auto max-w-[320px] object-contain md:h-16 sm:block"
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-0.5" aria-label="Primary">
+        <nav className="hidden items-center gap-0.5 md:flex" aria-label="Primary">
           {links.map((l) => (
             <Link
               key={l.to}
@@ -67,14 +68,14 @@ export function Nav() {
         </nav>
 
         <Link
-          to="/contact"
-          className="hidden md:inline-flex items-center gap-2 rounded-sm bg-copper px-4 py-2.5 text-xs font-mono tracking-widest uppercase text-copper-foreground font-semibold transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-8px_oklch(0.7_0.11_55/0.6)]"
+          to="/blogs"
+          className="hidden items-center gap-2 rounded-sm bg-copper px-4 py-2.5 font-mono text-xs font-semibold uppercase tracking-widest text-copper-foreground transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-8px_oklch(0.7_0.11_55/0.6)] md:inline-flex"
         >
-          Get in touch <span aria-hidden>→</span>
+          Blogs <span aria-hidden>-&gt;</span>
         </Link>
 
         <button
-          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border-strong text-foreground"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border-strong text-foreground md:hidden"
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -95,14 +96,14 @@ export function Nav() {
       </div>
 
       {open && (
-        <div className="md:hidden max-h-[calc(100svh-72px)] overflow-y-auto border-t border-border bg-background/96 shadow-[0_18px_50px_-28px_rgba(0,0,0,0.85)] backdrop-blur-xl">
+        <div className="max-h-[calc(100svh-72px)] overflow-y-auto border-t border-border bg-background/96 shadow-[0_18px_50px_-28px_rgba(0,0,0,0.85)] backdrop-blur-xl md:hidden">
           <nav className="container-prose flex flex-col py-4" aria-label="Mobile">
-            {links.map((l) => (
+            {mobileLinks.map((l) => (
               <Link
                 key={l.to}
                 to={l.to}
                 onClick={() => setOpen(false)}
-                className="border-b border-border/45 py-3.5 text-sm font-mono uppercase tracking-[0.16em] text-muted-foreground last:border-b-0 hover:text-foreground"
+                className="border-b border-border/45 py-3.5 font-mono text-sm uppercase tracking-[0.16em] text-muted-foreground last:border-b-0 hover:text-foreground"
                 activeProps={{ className: "text-foreground" }}
                 activeOptions={{ exact: l.to === "/" }}
               >

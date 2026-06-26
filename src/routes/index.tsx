@@ -8,7 +8,7 @@ import { ProjectCard } from "@/components/site/ProjectCard";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Johnathan Hyde — Multi-Tenant ERP & AI-native SaaS Architecture" },
+      { title: "Johnathan Hyde" },
       {
         name: "description",
         content:
@@ -33,8 +33,8 @@ export const Route = createFileRoute("/")({
 
 const credibility = [
   { k: "16+", v: "Years engineering" },
-  { k: "15", v: "Reference platforms" },
-  { k: "Multi-Tenant", v: "ERP / SaaS depth", muted: true },
+  { k: "10", v: "Projects" },
+  { k: "Multi-Tenant", v: "ERP / AI SaaS depth", muted: true },
   { k: ".NET · TS · Py", v: "Polyglot stack", muted: true },
 ];
 

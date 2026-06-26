@@ -88,7 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "application-name", content: "Johnathan Hyde" },
       { name: "apple-mobile-web-app-title", content: "Johnathan Hyde" },
       { name: "msapplication-TileColor", content: "#05070a" },
-      { name: "msapplication-TileImage", content: "/logo-icon-512.png" },
+      { name: "msapplication-TileImage", content: "/icon.png" },
       { property: "og:site_name", content: "Johnathan Hyde" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -106,19 +106,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         property: "og:image",
-        content:
-          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c7b689af-f669-4dd8-a40c-9f200200d3da/id-preview-835f003d--35f22396-68aa-4e57-91e9-20b3524cfdb1.lovable.app-1782187809550.png",
+        content: "/logo.png",
       },
       {
         name: "twitter:image",
-        content:
-          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c7b689af-f669-4dd8-a40c-9f200200d3da/id-preview-835f003d--35f22396-68aa-4e57-91e9-20b3524cfdb1.lovable.app-1782187809550.png",
+        content: "/logo.png",
       },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", sizes: "any" },
-      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/png", sizes: "500x500", href: "/icon.png" },
       { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
       { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
       { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
