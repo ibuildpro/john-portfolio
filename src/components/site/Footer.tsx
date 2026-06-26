@@ -31,14 +31,14 @@ export function Footer() {
           >
             View case studies
           </Link>
-          <a
+          {/* <a
             href="https://github.com/ibuildpro"
             target="_blank"
             rel="noreferrer"
             className="block mt-2 text-muted-foreground hover:text-foreground transition-colors"
           >
             github.com/ibuildpro ↗
-          </a>
+          </a> */}
         </div>
         <div className="text-sm md:text-right">
           <div className="eyebrow mb-3 md:justify-end">Based in</div>
