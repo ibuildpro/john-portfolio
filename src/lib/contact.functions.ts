@@ -9,8 +9,8 @@ import { createServerFn } from "@tanstack/react-start";
  *
  * Preferred Resend setup:
  *   RESEND_API_KEY  Resend API key
- *   RESEND_FROM     Verified sender, e.g. "Johnathan Hyde <contact@example.com>"
- *   CONTACT_TO      Recipient address
+ *   RESEND_FROM     Verified sender, e.g. "Johnathan Hyde <contact@johnathan.app>"
+ *   CONTACT_TO      Recipient address, e.g. "super.boom0510@gmail.com"
  *
  * SMTP fallback:
  *   SMTP_HOST       e.g. "smtp.fastmail.com"
@@ -180,6 +180,100 @@ function buildMailtoHref(to: string, subject: string, body: string) {
   return `mailto:${encodeURIComponent(to)}?${params.toString()}`;
 }
 
+type ResendApiError = {
+  name?: string;
+  message?: string;
+  statusCode?: number | null;
+};
+
+function getErrorMessage(error: unknown) {
+  return error instanceof Error ? error.message : String(error);
+}
+
+function getErrorCause(error: unknown) {
+  if (!error || typeof error !== "object" || !("cause" in error)) {
+    return undefined;
+  }
+
+  const cause = (error as { cause?: unknown }).cause;
+
+  if (!cause || typeof cause !== "object") {
+    return cause ? String(cause) : undefined;
+  }
+
+  return {
+    name: "name" in cause ? String(cause.name) : undefined,
+    code: "code" in cause ? String(cause.code) : undefined,
+    message: "message" in cause ? String(cause.message) : undefined,
+  };
+}
+
+async function sendWithResend({
+  apiKey,
+  from,
+  to,
+  replyTo,
+  subject,
+  text,
+  html,
+}: {
+  apiKey: string;
+  from: string;
+  to: string[];
+  replyTo: string;
+  subject: string;
+  text: string;
+  html: string;
+}) {
+  let response: Response;
+
+  try {
+    response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to,
+        reply_to: replyTo,
+        subject,
+        text,
+        html,
+      }),
+    });
+  } catch (error) {
+    console.error("[contact] Resend network request failed", {
+      endpoint: "https://api.resend.com/emails",
+      message: getErrorMessage(error),
+      cause: getErrorCause(error),
+    });
+    throw new Error(
+      "Email provider could not be reached from this server. Check outbound network/DNS access to api.resend.com and try again.",
+    );
+  }
+
+  const payload = (await response.json().catch(() => null)) as
+    | { id?: string; error?: ResendApiError }
+    | ResendApiError
+    | null;
+
+  if (!response.ok) {
+    const error = payload && "error" in payload ? payload.error : payload;
+    console.error("[contact] Resend API rejected delivery", {
+      status: response.status,
+      error,
+    });
+    throw new Error(error?.message || "Email delivery failed. Please try again.");
+  }
+
+  if (!payload || !("id" in payload) || !payload.id) {
+    console.error("[contact] Resend API returned an unexpected response", { payload });
+    throw new Error("Email delivery returned an unexpected response. Please try again.");
+  }
+}
+
 export const sendContact = createServerFn({ method: "POST" }).handler(
   async ({ data }): Promise<SendContactResult> => {
     const form = parseContactData(data);
@@ -201,21 +295,15 @@ export const sendContact = createServerFn({ method: "POST" }).handler(
     const resendFrom = env("RESEND_FROM");
 
     if (resendApiKey && resendFrom && to) {
-      const { Resend } = await import("resend");
-      const resend = new Resend(resendApiKey);
-      const result = await resend.emails.send({
+      await sendWithResend({
+        apiKey: resendApiKey,
         from: resendFrom,
         to: recipientList(to),
-        replyTo: `${form.name} <${form.email}>`,
+        replyTo: form.email,
         subject,
         text,
         html,
       });
-
-      if (result.error) {
-        console.error("[contact] Resend delivery failed", result.error);
-        throw new Error(result.error.message || "Email delivery failed. Please try again.");
-      }
 
       return { ok: true, delivery: "resend" };
     }
