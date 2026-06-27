@@ -22,7 +22,7 @@ export function PageHeader({
   lead?: string;
 }) {
   return (
-    <section className="container-prose pb-14 pt-10 md:pb-24 md:pt-20">
+    <section className="container-prose pb-14 pt-10 md:pb-24 md:pt-20" data-reveal="up">
       <div className="eyebrow">{eyebrow}</div>
       <h1 className="mt-4 text-[2.55rem] leading-[1.05] text-balance sm:text-5xl md:text-6xl">
         {title}

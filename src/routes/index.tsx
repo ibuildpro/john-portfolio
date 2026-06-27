@@ -71,8 +71,8 @@ function Index() {
       </div>
 
       {/* Credibility strip */}
-      <section className="border-y border-border bg-surface/50">
-        <div className="container-prose grid grid-cols-2 md:grid-cols-4">
+      <section className="border-y border-border bg-surface/50" data-reveal="fade">
+        <div className="container-prose stagger grid grid-cols-2 md:grid-cols-4">
           {credibility.map((c) => (
             <div
               key={c.v}
@@ -95,7 +95,7 @@ function Index() {
       <section className="container-prose relative py-20 md:py-36">
         <div aria-hidden className="orb orb-a opacity-25" />
         <div className="grid md:grid-cols-12 gap-12 relative">
-          <div className="md:col-span-4">
+          <div className="md:col-span-4" data-reveal="up">
             <div className="eyebrow">What I build</div>
             <h2 className="mt-4 text-3xl md:text-4xl leading-tight text-balance">
               Premium platforms for regulated, operationally complex industries.
@@ -109,7 +109,7 @@ function Index() {
             {pillars.map((p) => (
               <article
                 key={p.n}
-                className="glass rounded-lg p-5 transition-transform hover:-translate-y-1 sm:p-7"
+                className="glass luxury-card rounded-lg p-5 transition-transform hover:-translate-y-1 sm:p-7"
               >
                 <div className="font-mono text-xs text-accent-gold">{p.n}</div>
                 <h3 className="mt-3 text-xl">{p.t}</h3>
@@ -122,7 +122,10 @@ function Index() {
 
       {/* Featured projects */}
       <section className="container-prose pb-24 md:pb-36">
-        <div className="mb-10 flex flex-col items-start gap-4 sm:mb-12 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+        <div
+          className="mb-10 flex flex-col items-start gap-4 sm:mb-12 sm:flex-row sm:items-end sm:justify-between sm:gap-6"
+          data-reveal="up"
+        >
           <div>
             <div className="eyebrow">Selected work</div>
             <h2 className="mt-3 text-3xl md:text-4xl">Reference platforms</h2>
@@ -142,7 +145,7 @@ function Index() {
       </section>
 
       {/* Closing CTA */}
-      <section className="border-t border-border relative overflow-hidden">
+      <section className="border-t border-border relative overflow-hidden" data-reveal="fade">
         <div aria-hidden className="orb orb-b opacity-30" />
         <div className="container-prose relative py-20 text-center md:py-32">
           <div className="eyebrow">Let's talk</div>
@@ -155,14 +158,14 @@ function Index() {
           <div className="mx-auto mt-10 grid max-w-[22rem] grid-cols-2 justify-center gap-3 sm:flex sm:max-w-none sm:flex-wrap">
             <Link
               to="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-primary px-3 py-3 text-sm font-semibold text-primary-foreground shadow-[0_18px_46px_-24px_oklch(0.74_0.08_82/0.70)] transition-transform hover:-translate-y-0.5 sm:gap-3 sm:px-7 sm:py-3.5"
+              className="luxury-button inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-primary px-3 py-3 text-sm font-semibold text-primary-foreground shadow-[0_18px_46px_-24px_oklch(0.74_0.08_82/0.70)] transition-transform hover:-translate-y-0.5 sm:gap-3 sm:px-7 sm:py-3.5"
             >
               <span className="sm:hidden">Contact</span>
               <span className="hidden sm:inline">Get in Touch →</span>
             </Link>
             <Link
               to="/projects"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-border-strong px-3 py-3 text-sm transition-colors hover:border-accent-gold hover:text-accent-gold sm:gap-3 sm:px-6 sm:py-3.5"
+              className="luxury-button inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-border-strong px-3 py-3 text-sm transition-colors hover:border-accent-gold hover:text-accent-gold sm:gap-3 sm:px-6 sm:py-3.5"
             >
               <span className="sm:hidden">Projects</span>
               <span className="hidden sm:inline">View Projects</span>

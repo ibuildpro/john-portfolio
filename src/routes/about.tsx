@@ -58,9 +58,9 @@ function About() {
       />
 
       <section className="container-prose grid gap-16 pb-24 lg:grid-cols-12">
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5" data-reveal="left">
           <div className="sticky top-28">
-            <div className="relative overflow-hidden rounded-sm border border-border-strong bg-surface-elevated p-7 shadow-[var(--shadow-elegant)]">
+            <div className="luxury-card relative overflow-hidden rounded-sm border border-border-strong bg-surface-elevated p-7 shadow-[var(--shadow-elegant)]">
               <div aria-hidden="true" className="absolute inset-0 grid-lines opacity-[0.05]" />
               <div
                 aria-hidden="true"
@@ -96,7 +96,10 @@ function About() {
           </div>
         </div>
 
-        <div className="space-y-8 text-lg leading-relaxed text-foreground/85 lg:col-span-7">
+        <div
+          className="space-y-8 text-lg leading-relaxed text-foreground/85 lg:col-span-7"
+          data-reveal="right"
+        >
           <p>
             My work lives in the layer between business intent and dependable software. Approvals
             that route correctly. Numbers that tie back to source. Workflows that survive their
@@ -120,9 +123,9 @@ function About() {
 
           <div>
             <div className="eyebrow">Operating principles</div>
-            <div className="mt-6 grid gap-px bg-border sm:grid-cols-2">
+            <div className="stagger mt-6 grid gap-px bg-border sm:grid-cols-2">
               {values.map((v) => (
-                <div key={v.t} className="bg-background p-6">
+                <div key={v.t} className="luxury-card bg-background p-6">
                   <h3 className="font-display text-xl">{v.t}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{v.d}</p>
                 </div>

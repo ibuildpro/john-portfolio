@@ -13,18 +13,18 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(135deg,oklch(0.075_0.006_70)_0%,oklch(0.12_0.008_75)_48%,oklch(0.18_0.014_78)_100%)]" />
         <div
           aria-hidden="true"
-          className="absolute top-[18svh] right-[-28vw] h-[58svh] w-[92vw] rounded-[2px] border border-accent-gold/10 bg-[linear-gradient(135deg,oklch(0.22_0.012_76/0.18),transparent_62%)] opacity-60 [mask-image:linear-gradient(90deg,transparent_0%,black_42%,black_82%,transparent_100%)] sm:right-[-22vw] md:top-[12svh] md:right-[-12vw] md:h-[70svh] md:w-[58vw] lg:right-[-6vw] lg:w-[50vw]"
+          className="hero-architect absolute top-[18svh] right-[-28vw] h-[58svh] w-[92vw] rounded-[2px] border border-accent-gold/10 bg-[linear-gradient(135deg,oklch(0.22_0.012_76/0.18),transparent_62%)] opacity-60 [mask-image:linear-gradient(90deg,transparent_0%,black_42%,black_82%,transparent_100%)] sm:right-[-22vw] md:top-[12svh] md:right-[-12vw] md:h-[70svh] md:w-[58vw] lg:right-[-6vw] lg:w-[50vw]"
         >
           <div className="absolute inset-8 border border-border-strong/35" />
-          <div className="absolute inset-x-14 top-[18%] h-px bg-gradient-to-r from-transparent via-accent-gold/60 to-transparent" />
-          <div className="absolute inset-x-14 top-[39%] h-px bg-gradient-to-r from-transparent via-border-strong to-transparent" />
-          <div className="absolute inset-x-14 top-[60%] h-px bg-gradient-to-r from-transparent via-border-strong to-transparent" />
-          <div className="absolute inset-y-14 left-[28%] w-px bg-gradient-to-b from-transparent via-accent-gold/35 to-transparent" />
-          <div className="absolute inset-y-14 left-[58%] w-px bg-gradient-to-b from-transparent via-border-strong to-transparent" />
-          <div className="absolute left-[12%] top-[13%] h-2 w-2 rounded-full bg-accent-gold" />
-          <div className="absolute left-[41%] top-[34%] h-2 w-2 rounded-full bg-accent-gold/70" />
-          <div className="absolute left-[72%] top-[55%] h-2 w-2 rounded-full bg-accent-gold/60" />
-          <div className="absolute right-[14%] bottom-[16%] h-px w-28 bg-accent-gold/50" />
+          <div className="hero-line absolute inset-x-14 top-[18%] h-px bg-gradient-to-r from-transparent via-accent-gold/60 to-transparent" />
+          <div className="hero-line absolute inset-x-14 top-[39%] h-px bg-gradient-to-r from-transparent via-border-strong to-transparent [animation-delay:650ms]" />
+          <div className="hero-line absolute inset-x-14 top-[60%] h-px bg-gradient-to-r from-transparent via-border-strong to-transparent [animation-delay:1150ms]" />
+          <div className="hero-line-vertical absolute inset-y-14 left-[28%] w-px bg-gradient-to-b from-transparent via-accent-gold/35 to-transparent [animation-delay:350ms]" />
+          <div className="hero-line-vertical absolute inset-y-14 left-[58%] w-px bg-gradient-to-b from-transparent via-border-strong to-transparent [animation-delay:950ms]" />
+          <div className="hero-node absolute left-[12%] top-[13%] h-2 w-2 rounded-full bg-accent-gold" />
+          <div className="hero-node absolute left-[41%] top-[34%] h-2 w-2 rounded-full bg-accent-gold/70 [animation-delay:900ms]" />
+          <div className="hero-node absolute left-[72%] top-[55%] h-2 w-2 rounded-full bg-accent-gold/60 [animation-delay:1650ms]" />
+          <div className="hero-line absolute right-[14%] bottom-[16%] h-px w-28 bg-accent-gold/50 [animation-delay:1500ms]" />
         </div>
         <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(0.075_0.006_70/0.98)_0%,oklch(0.075_0.006_70/0.86)_34%,oklch(0.075_0.006_70/0.48)_62%,oklch(0.075_0.006_70/0.78)_100%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_76%_34%,oklch(0.76_0.075_82/0.18)_0%,transparent_42%),radial-gradient(ellipse_at_18%_70%,oklch(0.62_0.04_210/0.13)_0%,transparent_48%)]" />
@@ -58,7 +58,7 @@ export function Hero() {
           <div className="mt-8 grid max-w-[22rem] grid-cols-2 items-center gap-3 sm:mt-10 sm:flex sm:max-w-none sm:flex-wrap">
             <Link
               to="/projects"
-              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-primary px-3 py-3 text-sm font-semibold text-primary-foreground shadow-[0_18px_46px_-24px_oklch(0.74_0.08_82/0.70)] transition-transform hover:-translate-y-0.5 sm:gap-3 sm:px-6 sm:py-3.5"
+              className="luxury-button group inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-primary px-3 py-3 text-sm font-semibold text-primary-foreground shadow-[0_18px_46px_-24px_oklch(0.74_0.08_82/0.70)] transition-transform hover:-translate-y-0.5 sm:gap-3 sm:px-6 sm:py-3.5"
             >
               <span className="sm:hidden">Projects</span>
               <span className="hidden sm:inline">View Projects</span>
@@ -68,14 +68,14 @@ export function Hero() {
             </Link>
             <Link
               to="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-border-strong bg-background/35 px-3 py-3 text-sm font-medium text-foreground/90 backdrop-blur transition-colors hover:border-accent-gold hover:text-accent-gold sm:gap-3 sm:px-6 sm:py-3.5"
+              className="luxury-button inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-border-strong bg-background/35 px-3 py-3 text-sm font-medium text-foreground/90 backdrop-blur transition-colors hover:border-accent-gold hover:text-accent-gold sm:gap-3 sm:px-6 sm:py-3.5"
             >
               <span className="sm:hidden">Contact</span>
               <span className="hidden sm:inline">Get in Touch</span>
             </Link>
           </div>
 
-          <div className="mt-11 hidden max-w-[46rem] gap-5 border-t border-border/70 pt-5 sm:grid sm:grid-cols-3">
+          <div className="stagger mt-11 hidden max-w-[46rem] gap-5 border-t border-border/70 pt-5 sm:grid sm:grid-cols-3">
             {proofPoints.map((item) => (
               <div key={item.label}>
                 <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-gold/80">

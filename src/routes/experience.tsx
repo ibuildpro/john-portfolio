@@ -5,7 +5,11 @@ export const Route = createFileRoute("/experience")({
   head: () => ({
     meta: [
       { title: "Experience — Johnathan Hyde" },
-      { name: "description", content: "Sixteen years of senior engineering across enterprise AI SaaS, ERP, data, and operations platforms." },
+      {
+        name: "description",
+        content:
+          "Sixteen years of senior engineering across enterprise AI SaaS, ERP, data, and operations platforms.",
+      },
       { property: "og:title", content: "Experience — Johnathan Hyde" },
       { property: "og:description", content: "A career in business-critical software." },
       { property: "og:url", content: "/experience" },
@@ -20,20 +24,32 @@ const roles = [
     period: "Oct 2025 — Present",
     role: "Independent Software Engineer",
     company: "Self-employed",
-    summary: "Designing and shipping enterprise AI SaaS products and custom ERP platforms for founders and operations teams who need software they can stake the business on.",
+    summary:
+      "Designing and shipping enterprise AI SaaS products and custom ERP platforms for founders and operations teams who need software they can stake the business on.",
     points: [
       "Architect tenant-aware ERP and AI SaaS with approval workflows, billing, reporting, and full audit trails.",
       "Build secure application layers in C#, ASP.NET Core, TypeScript, Node.js, PostgreSQL, and Supabase.",
       "Ship AI-enabled features — document processing, retrieval, operational routing — using Python and the OpenAI API.",
       "Apply tenant isolation, source-of-truth reporting, and permissions modeled on real business responsibility.",
     ],
-    stack: ["C#", "ASP.NET Core", "Azure", "TypeScript", "Node.js", "Python", "PostgreSQL", "Supabase", "OpenAI"],
+    stack: [
+      "C#",
+      "ASP.NET Core",
+      "Azure",
+      "TypeScript",
+      "Node.js",
+      "Python",
+      "PostgreSQL",
+      "Supabase",
+      "OpenAI",
+    ],
   },
   {
     period: "Jun 2023 — Sep 2025",
     role: "Senior Business Systems & Data Engineer",
     company: "Nsight Health",
-    summary: "Led a cross-functional delivery team modernizing the application portfolio for operations-heavy teams across the healthcare business.",
+    summary:
+      "Led a cross-functional delivery team modernizing the application portfolio for operations-heavy teams across the healthcare business.",
     points: [
       "Set technical direction for architecture, database design, API boundaries, and deployment practice across a growing portfolio.",
       "Guided implementation in .NET, ASP.NET Core, React, Angular, SQL Server, and Azure with maintainable business logic at the core.",
@@ -46,7 +62,8 @@ const roles = [
     period: "Jun 2021 — May 2023",
     role: "Staff Software Engineer",
     company: "Starkflow",
-    summary: "Designed operational data models, reporting layers, and workflow services for finance, customer operations, and planning teams.",
+    summary:
+      "Designed operational data models, reporting layers, and workflow services for finance, customer operations, and planning teams.",
     points: [
       "Replaced fragmented spreadsheets and manual handoffs with maintainable system logic and usable reporting.",
       "Improved data consistency through SQL-based reconciliation, database design, and traceable business rules.",
@@ -59,7 +76,8 @@ const roles = [
     period: "Sep 2014 — Apr 2021",
     role: "Software Engineer",
     company: "MMC Global",
-    summary: "Built database-driven internal applications, workflow tools, reporting modules, and API services for operations and finance teams.",
+    summary:
+      "Built database-driven internal applications, workflow tools, reporting modules, and API services for operations and finance teams.",
     points: [
       "Designed application and data layers in C#, .NET, Entity Framework, and SQL Server.",
       "Built user-facing functionality in JavaScript, TypeScript, Angular, and React for internal users and customers.",
@@ -71,7 +89,8 @@ const roles = [
     period: "Feb 2010 — Aug 2014",
     role: "Software Developer",
     company: "Vega Applications Development",
-    summary: "Built and supported business applications, internal tools, and reporting workflows used in day-to-day operations.",
+    summary:
+      "Built and supported business applications, internal tools, and reporting workflows used in day-to-day operations.",
     points: [
       "Developed .NET application features, SQL queries, stored procedures, and data-access components for core business processes.",
       "Assisted with integration, production issue resolution, testing, and release support across legacy and newer systems.",
@@ -92,9 +111,16 @@ function Experience() {
 
       <section className="container-prose pb-32">
         <ol className="relative space-y-20">
-          <div aria-hidden className="absolute left-[7px] top-2 bottom-2 w-px bg-border md:left-[calc(16rem-1px)]" />
+          <div
+            aria-hidden
+            className="absolute left-[7px] top-2 bottom-2 w-px bg-border md:left-[calc(16rem-1px)]"
+          />
           {roles.map((r, i) => (
-            <li key={r.role + r.period} className="relative grid md:grid-cols-[16rem_1fr] gap-8 md:gap-12">
+            <li
+              key={r.role + r.period}
+              className="relative grid md:grid-cols-[16rem_1fr] gap-8 md:gap-12"
+              data-reveal="up"
+            >
               <div className="md:text-right md:pr-12">
                 <span className="absolute left-0 top-2 grid h-4 w-4 place-items-center md:left-[calc(16rem-8px)]">
                   <span className="h-2 w-2 rounded-full bg-copper ring-4 ring-background" />
@@ -122,7 +148,10 @@ function Experience() {
 
                 <div className="mt-6 flex flex-wrap gap-1.5">
                   {r.stack.map((s) => (
-                    <span key={s} className="font-mono text-[10px] uppercase tracking-widest px-2 py-1 border border-border text-muted-foreground">
+                    <span
+                      key={s}
+                      className="font-mono text-[10px] uppercase tracking-widest px-2 py-1 border border-border text-muted-foreground"
+                    >
                       {s}
                     </span>
                   ))}

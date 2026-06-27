@@ -34,9 +34,10 @@ function BlogCard({ post, featured = false }: BlogCardProps) {
   return (
     <article
       id={`blog-${post.slug}`}
-      className={`group glass overflow-hidden rounded-lg transition-all hover:-translate-y-1 hover:border-accent-gold/45 ${
+      className={`group glass luxury-card overflow-hidden rounded-lg transition-all hover:-translate-y-1 hover:border-accent-gold/45 ${
         featured ? "grid gap-0 lg:grid-cols-[1.08fr_0.92fr]" : ""
       }`}
+      data-reveal="up"
     >
       <Link
         to="/blogs/$slug"

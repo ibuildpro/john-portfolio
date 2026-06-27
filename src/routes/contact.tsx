@@ -112,7 +112,8 @@ function Contact() {
       <section className="container-prose pb-32 grid lg:grid-cols-12 gap-10">
         <form
           onSubmit={submit}
-          className="lg:col-span-7 glass rounded-2xl p-8 md:p-10 space-y-6"
+          className="lg:col-span-7 glass luxury-card rounded-2xl p-8 md:p-10 space-y-6"
+          data-reveal="left"
           noValidate
         >
           {/* Honeypot — invisible to humans, irresistible to bots */}
@@ -243,8 +244,8 @@ function Contact() {
           )}
         </form>
 
-        <aside className="lg:col-span-5 space-y-5">
-          <div className="glass rounded-xl p-7">
+        <aside className="lg:col-span-5 space-y-5" data-reveal="right">
+          <div className="glass luxury-card rounded-xl p-7">
             <div className="eyebrow">What happens next</div>
             <ol className="mt-4 space-y-4 text-sm text-foreground/85">
               <li>
@@ -262,7 +263,7 @@ function Contact() {
             </ol>
           </div>
 
-          <div className="glass rounded-xl p-7">
+          <div className="glass luxury-card rounded-xl p-7">
             <div className="eyebrow">Best fit for</div>
             <ul className="mt-4 grid grid-cols-2 gap-2 text-sm text-muted-foreground">
               <li>Healthcare SaaS</li>
@@ -274,7 +275,7 @@ function Contact() {
             </ul>
           </div>
 
-          <div className="glass rounded-xl p-7">
+          <div className="glass luxury-card rounded-xl p-7">
             <div className="eyebrow">Based in</div>
             <div className="mt-3 font-display text-xl">Bainbridge, Indiana · US</div>
             <div className="mt-2 text-sm text-muted-foreground">

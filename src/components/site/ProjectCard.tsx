@@ -51,7 +51,10 @@ function ProjectCard({ project, onOpen }: ProjectCardProps) {
   ) : null;
 
   return (
-    <article className="group glass rounded-2xl p-4 border border-border/70 transition-all hover:-translate-y-1 hover:border-accent-gold/40">
+    <article
+      className="group glass luxury-card rounded-2xl p-4 border border-border/70 transition-all hover:-translate-y-1 hover:border-accent-gold/40"
+      data-reveal="up"
+    >
       {imageSrc && onOpen && (
         <button
           type="button"

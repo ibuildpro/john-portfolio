@@ -59,7 +59,7 @@ function BlogDetailPage() {
   return (
     <PageShell>
       <article>
-        <header className="container-prose pb-12 pt-10 md:pb-16 md:pt-20">
+        <header className="container-prose pb-12 pt-10 md:pb-16 md:pt-20" data-reveal="up">
           <Link
             to="/blogs"
             className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent-gold transition-colors hover:text-foreground"
@@ -88,20 +88,20 @@ function BlogDetailPage() {
           </p>
         </header>
 
-        <section className="container-prose pb-14">
+        <section className="container-prose pb-14" data-reveal="fade">
           <BlogImage post={post} />
         </section>
 
         <section className="container-prose grid gap-12 pb-24 lg:grid-cols-[minmax(0,44rem)_1fr]">
-          <div className="space-y-7 text-lg leading-8 text-foreground/84">
+          <div className="space-y-7 text-lg leading-8 text-foreground/84" data-reveal="up">
             {post.body.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
 
-          <aside className="lg:pl-8">
+          <aside className="lg:pl-8" data-reveal="right">
             <div className="sticky top-28 space-y-8">
-              <div className="glass rounded-lg p-6">
+              <div className="glass luxury-card rounded-lg p-6">
                 <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent-gold">
                   Continue reading
                 </div>
@@ -127,7 +127,7 @@ function BlogDetailPage() {
           </aside>
         </section>
 
-        <section className="border-t border-border">
+        <section className="border-t border-border" data-reveal="fade">
           <div className="container-prose py-20 text-center">
             <div className="eyebrow">Next step</div>
             <h2 className="mx-auto mt-4 max-w-3xl font-display text-[2.35rem] leading-[1.05] text-balance sm:text-4xl md:text-5xl">
@@ -139,7 +139,7 @@ function BlogDetailPage() {
             </p>
             <Link
               to="/contact"
-              className="mt-10 inline-flex rounded-md bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+              className="luxury-button mt-10 inline-flex rounded-md bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
             >
               Start a Conversation
             </Link>

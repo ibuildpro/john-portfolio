@@ -48,7 +48,10 @@ function BlogsIndexPage() {
     <PageShell>
       <section className="container-prose relative overflow-hidden pb-16 pt-14 md:pb-24 md:pt-20">
         <div aria-hidden="true" className="orb orb-a opacity-20" />
-        <div className="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+        <div
+          className="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-end"
+          data-reveal="up"
+        >
           <div>
             <div className="eyebrow">Blogs</div>
             <h1 className="mt-4 max-w-4xl font-display text-[2.2rem] leading-[1.02] text-balance sm:text-5xl md:text-6xl">
@@ -61,7 +64,7 @@ function BlogsIndexPage() {
             </p>
           </div>
 
-          <aside className="glass rounded-lg p-6">
+          <aside className="glass luxury-card rounded-lg p-6">
             <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent-gold">
               Editorial Position
             </div>
@@ -89,7 +92,10 @@ function BlogsIndexPage() {
       </section>
 
       <section className="container-prose pb-20">
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div
+          className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
+          data-reveal="up"
+        >
           <div>
             <div className="eyebrow">Featured article</div>
             <h2 className="mt-3 text-3xl md:text-4xl">A considered starting point</h2>
@@ -128,7 +134,7 @@ function BlogsIndexPage() {
         </div>
 
         {gridPosts.length > 0 ? (
-          <div key={category} className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div key={category} className="stagger grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {gridPosts.map((post) => (
               <BlogCard key={post.slug} post={post} />
             ))}
@@ -140,7 +146,7 @@ function BlogsIndexPage() {
         )}
       </section>
 
-      <section className="relative overflow-hidden border-t border-border">
+      <section className="relative overflow-hidden border-t border-border" data-reveal="fade">
         <div aria-hidden="true" className="orb orb-b opacity-25" />
         <div className="container-prose relative py-20 text-center md:py-28">
           <div className="eyebrow">Next conversation</div>
@@ -154,13 +160,13 @@ function BlogsIndexPage() {
           <div className="mx-auto mt-10 grid max-w-[22rem] grid-cols-2 justify-center gap-3 sm:flex sm:max-w-none sm:flex-wrap">
             <Link
               to="/contact"
-              className="inline-flex min-h-12 items-center justify-center rounded-md bg-primary px-3 py-3 text-sm font-semibold text-primary-foreground shadow-[0_18px_46px_-24px_oklch(0.74_0.08_82/0.70)] transition-transform hover:-translate-y-0.5 sm:px-7 sm:py-3.5"
+              className="luxury-button inline-flex min-h-12 items-center justify-center rounded-md bg-primary px-3 py-3 text-sm font-semibold text-primary-foreground shadow-[0_18px_46px_-24px_oklch(0.74_0.08_82/0.70)] transition-transform hover:-translate-y-0.5 sm:px-7 sm:py-3.5"
             >
               Start a Project
             </Link>
             <Link
               to="/projects"
-              className="inline-flex min-h-12 items-center justify-center rounded-md border border-border-strong px-3 py-3 text-sm transition-colors hover:border-accent-gold hover:text-accent-gold sm:px-6 sm:py-3.5"
+              className="luxury-button inline-flex min-h-12 items-center justify-center rounded-md border border-border-strong px-3 py-3 text-sm transition-colors hover:border-accent-gold hover:text-accent-gold sm:px-6 sm:py-3.5"
             >
               View Work
             </Link>

@@ -117,9 +117,12 @@ function Skills() {
         lead="Tools matter less than judgement about when to use them. These are the surfaces I work across most days — depth sharpened by years of running real systems in production."
       />
 
-      <section className="container-prose pb-32 space-y-px bg-border">
+      <section className="container-prose stagger pb-32 space-y-px bg-border">
         {groups.map((g) => (
-          <div key={g.title} className="bg-background grid md:grid-cols-12 gap-8 p-8 md:p-12">
+          <div
+            key={g.title}
+            className="luxury-card bg-background grid md:grid-cols-12 gap-8 p-8 md:p-12"
+          >
             <div className="md:col-span-4">
               <div className="font-mono text-[11px] text-copper tracking-[0.2em]">{g.n}</div>
               <h2 className="mt-3 text-2xl md:text-3xl">{g.title}</h2>

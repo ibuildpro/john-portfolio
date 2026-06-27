@@ -65,7 +65,7 @@ function ProjectsPage() {
       />
 
       <section className="container-prose pb-32">
-        <div className="space-y-3 mb-8">
+        <div className="space-y-3 mb-8" data-reveal="up">
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((c) => (
               <button
@@ -135,7 +135,7 @@ function ProjectsPage() {
           onClick={() => setOpen(null)}
         >
           <div
-            className="glass relative max-w-2xl w-full rounded-2xl p-8 max-h-[90vh] overflow-y-auto"
+            className="glass luxury-card relative max-w-2xl w-full rounded-2xl p-8 max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -166,7 +166,7 @@ function ProjectsPage() {
                 href={open.url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+                className="luxury-button inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
               >
                 Visit website ↗
               </a>

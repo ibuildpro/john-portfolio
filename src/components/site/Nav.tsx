@@ -31,14 +31,18 @@ export function Nav() {
       }`}
     >
       <div className="container-prose flex h-[72px] items-center justify-between md:h-20">
-        <Link to="/" className="group flex items-center" aria-label="Johnathan Hyde Home">
+        <Link
+          to="/"
+          className="group flex items-center transition-transform duration-500 ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:-translate-y-0.5"
+          aria-label="Johnathan Hyde Home"
+        >
           <img
             src="/icon.png"
             alt=""
             aria-hidden="true"
             width={500}
             height={500}
-            className="h-11 w-11 object-contain sm:hidden"
+            className="h-11 w-11 object-contain transition-[filter,transform] duration-700 group-hover:scale-[1.025] group-hover:drop-shadow-[0_8px_26px_oklch(0.74_0.078_82/0.28)] sm:hidden"
           />
           <img
             src="/logo.png"
@@ -46,7 +50,7 @@ export function Nav() {
             aria-hidden="true"
             width={2400}
             height={600}
-            className="hidden h-14 w-auto max-w-[320px] object-contain md:h-16 sm:block"
+            className="hidden h-14 w-auto max-w-[320px] object-contain transition-[filter,transform] duration-700 group-hover:scale-[1.012] group-hover:drop-shadow-[0_8px_26px_oklch(0.74_0.078_82/0.22)] md:h-16 sm:block"
           />
         </Link>
 
@@ -69,7 +73,7 @@ export function Nav() {
 
         <Link
           to="/blogs"
-          className="hidden items-center gap-2 rounded-sm bg-copper px-4 py-2.5 font-mono text-xs font-semibold uppercase tracking-widest text-copper-foreground transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-8px_oklch(0.7_0.11_55/0.6)] md:inline-flex"
+          className="luxury-button hidden items-center gap-2 rounded-sm bg-copper px-4 py-2.5 font-mono text-xs font-semibold uppercase tracking-widest text-copper-foreground transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-8px_oklch(0.7_0.11_55/0.6)] md:inline-flex"
         >
           Blogs <span aria-hidden>-&gt;</span>
         </Link>
