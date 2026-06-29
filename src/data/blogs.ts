@@ -5,6 +5,7 @@ import dataModelingImage from "@/assets/blogs/data-modeling.jpg?url";
 import futureBusinessImage from "@/assets/blogs/future-business.jpg?url";
 import hardSeasonsImage from "@/assets/blogs/hard-seasons.jpg?url";
 import problemSolvingImage from "@/assets/blogs/problem-solving.jpg?url";
+import softwareBuildingImage from "@/assets/blogs/software-building.png?url";
 
 export type BlogPost = {
   slug: string;
@@ -21,6 +22,33 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "rooms-doors-wiring-foundation",
+    title: "Rooms, Doors, Wiring, Foundation: How I Think About Software",
+    excerpt:
+      "Software is not just a screen. It is a place people enter every day, with rooms, locks, wiring, plumbing, and a foundation that has to hold.",
+    category: "Architecture",
+    date: "2026-06-28",
+    readTime: "2 min read",
+    tags: ["Architecture", "Multi-Tenant", "Systems Thinking"],
+    coverImage: softwareBuildingImage,
+    imageAlt:
+      "Premium architectural cross-section showing software rooms, locked doors, wiring paths, plumbing conduits, and foundations",
+    imagePrompt:
+      "Premium editorial image of software as a building cross-section, secure rooms, locked doors, wiring paths, plumbing-like data conduits, scalable foundation grid, dark graphite studio, antique brass highlights, no readable text.",
+    body: [
+      "Software is a building people work inside every day. That sentence has been sitting in my head for a long time, because it explains my work better than a list of frameworks ever could. A business application is not just a dashboard, a form, a report, or a pretty interaction. It is a place people enter to do consequential work.",
+      "Most people only see dashboards, approvals, reports, and customer records. They do not need to think about what is underneath. I do. That is not a complaint. That is the job. Somebody has to care about the rooms, the locks, the wiring, the plumbing, and the foundation before the business starts leaning on it with real weight.",
+      "The rooms are boundaries. Tenants. Teams. Roles. Customers. Departments. A good system knows where one room ends and another begins. It does not let one customer's data wander into another customer's incident. It does not confuse a manager's responsibility with an administrator's power. It gives people the right space to work without making them think about the walls.",
+      "The doors are permissions and workflows. Some doors should open easily because the work needs to move. Some doors should stay locked because trust is more important than convenience. The trouble is that real businesses are messy. A person changes roles. An approval needs escalation. A customer needs an exception. If the doors were designed carelessly, every exception becomes a workaround.",
+      "The wiring is how information moves. Integrations, events, queues, notifications, audit trails, data syncs. The user may never see those paths, but they feel them when a report updates at the right time or when a status change reaches the right person. Bad wiring is not always dramatic. Sometimes it just creates small delays until everyone quietly builds their own spreadsheet.",
+      "The plumbing is operational flow. Billing, scheduling, claims, reconciliation, onboarding, close processes, support handoffs. It is not glamorous. Actually, the unglamorous parts are usually where the business tells the truth. If the plumbing is wrong, pressure backs up somewhere. People can smell it even if they cannot name the design flaw.",
+      "And then there is the foundation. Data modeling. Tenant isolation. Observability. Security posture. Deployment discipline. Testing habits. The foundation is easy to ignore when the product is young and the demo looks good. But growth has a way of asking rude questions. Can this hold more customers? More rules? More integrations? More audit pressure? More mistakes by tired humans on ordinary Tuesdays?",
+      "That is why I care about architecture. Not because diagrams are impressive. Not because I want software to sound heavier than it is. I care because people work inside these systems every day. They make decisions there. They trust numbers there. They pass responsibility from one person to another there. If the building is weak, their work gets harder.",
+      "So when I build, I try to think like someone responsible for the place, not just the screen. Where should people enter? What should be protected? What should be easy to find? What should be impossible to confuse? What has to keep holding when the company gets bigger, busier, and more complicated?",
+      "That is the kind of software I want my name attached to. Quietly strong. Clear under pressure. Honest about boundaries. Good enough underneath that the people working inside it do not have to think about the structure all day. They can just do the work.",
+    ],
+  },
   {
     slug: "from-architectural-thinking-to-digital-products",
     title: "Blueprints, Bugs, and the Quiet Weight of a Product",

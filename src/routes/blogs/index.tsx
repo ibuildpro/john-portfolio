@@ -70,7 +70,7 @@ function BlogsIndexPage() {
             </div>
             <div className="mt-5 grid grid-cols-3 gap-px bg-border">
               {[
-                ["07", "Essays"],
+                ["08", "Essays"],
                 ["16", "Years"],
                 ["04", "Domains"],
               ].map(([value, label]) => (
@@ -98,7 +98,7 @@ function BlogsIndexPage() {
         >
           <div>
             <div className="eyebrow">Featured article</div>
-            <h2 className="mt-3 text-3xl md:text-4xl">A considered starting point</h2>
+            <h2 className="mt-3 text-3xl md:text-4xl">The core philosophy</h2>
           </div>
           <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
             Brand thinking / architecture / delivery
@@ -112,7 +112,7 @@ function BlogsIndexPage() {
           <div>
             <div className="eyebrow">Perspective library</div>
             <h2 className="mt-3 text-3xl md:text-4xl">
-              Seven essays with a senior engineering lens.
+              Eight essays with a senior engineering lens.
             </h2>
           </div>
           <div className="flex flex-wrap gap-2" aria-label="Filter blog posts by category">

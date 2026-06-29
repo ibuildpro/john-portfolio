@@ -205,31 +205,6 @@
     isolation: isolate;
     overflow: hidden;
   }
-  .luxury-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0;
-    background: linear-gradient(
-      115deg,
-      transparent 0%,
-      transparent 38%,
-      oklch(0.84 0.052 86 / 0.12) 49%,
-      transparent 61%,
-      transparent 100%
-    );
-    transform: translateX(-18%);
-    transition:
-      opacity 620ms cubic-bezier(0.2, 0.7, 0.2, 1),
-      transform 820ms cubic-bezier(0.2, 0.7, 0.2, 1);
-  }
-  .luxury-card:hover::after {
-    opacity: 1;
-    transform: translateX(18%);
-  }
   .luxury-card > * {
     position: relative;
     z-index: 1;
@@ -328,6 +303,57 @@
     animation: float 22s ease-in-out infinite reverse;
   }
 
+  .hero-portrait-frame {
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: min(68vw, 980px);
+    overflow: hidden;
+    opacity: 0.78;
+    pointer-events: none;
+    mask-image: linear-gradient(90deg, transparent 0%, black 26%, black 84%, transparent 100%);
+  }
+  .hero-portrait-frame::before,
+  .hero-portrait-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .hero-portrait-frame::before {
+    background:
+      linear-gradient(90deg, oklch(0.075 0.006 70 / 0.92), transparent 34%),
+      linear-gradient(180deg, oklch(0.075 0.006 70 / 0.2), oklch(0.075 0.006 70 / 0.86)),
+      radial-gradient(ellipse at 58% 34%, oklch(0.78 0.068 82 / 0.22), transparent 46%);
+    mix-blend-mode: multiply;
+  }
+  .hero-portrait-frame::after {
+    background:
+      linear-gradient(
+        115deg,
+        transparent 0%,
+        transparent 52%,
+        oklch(0.82 0.05 86 / 0.09) 58%,
+        transparent 68%
+      ),
+      radial-gradient(
+        ellipse at 68% 44%,
+        transparent 0%,
+        transparent 34%,
+        oklch(0.075 0.006 70 / 0.44) 72%
+      ),
+      linear-gradient(90deg, oklch(0.075 0.006 70 / 0.96), transparent 42%);
+  }
+  .hero-portrait-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 58% center;
+    filter: grayscale(1) contrast(1.14) brightness(0.72) sepia(0.08) saturate(0.88);
+    transform: scale(1.06);
+    transform-origin: 58% center;
+  }
+
   [data-reveal] {
     opacity: 1;
     filter: blur(0);
@@ -418,6 +444,42 @@
   .hero-node {
     box-shadow: 0 0 0 0 oklch(0.74 0.078 82 / 0.22);
     animation: nodePulse 4.8s cubic-bezier(0.2, 0.7, 0.2, 1) infinite;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-portrait-frame {
+    inset: 5.75rem -26vw auto auto;
+    width: 98vw;
+    height: 58svh;
+    opacity: 0.42;
+    mask-image: radial-gradient(ellipse at 64% 38%, black 0%, black 42%, transparent 74%);
+  }
+  .hero-portrait-frame::before {
+    background:
+      linear-gradient(180deg, oklch(0.075 0.006 70 / 0.16), oklch(0.075 0.006 70 / 0.9)),
+      linear-gradient(90deg, oklch(0.075 0.006 70 / 0.98), transparent 46%);
+  }
+  .hero-portrait-frame::after {
+    background:
+      radial-gradient(
+        ellipse at 68% 40%,
+        transparent 0%,
+        transparent 30%,
+        oklch(0.075 0.006 70 / 0.58) 76%
+      ),
+      linear-gradient(90deg, oklch(0.075 0.006 70 / 0.98), transparent 44%);
+  }
+  .hero-portrait-image {
+    object-position: 58% 42%;
+    transform: scale(1.13);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-portrait-frame {
+    width: min(74vw, 780px);
+    opacity: 0.58;
   }
 }
 

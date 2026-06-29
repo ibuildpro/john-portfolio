@@ -53,7 +53,7 @@ function About() {
     <PageShell>
       <PageHeader
         eyebrow="About"
-        title="An engineer for systems that hold weight."
+        title="I build software like a place people have to work inside."
         lead="I'm Johnathan Hyde - a senior software engineer in Bainbridge, Indiana. For 16 years I've designed, built, and shepherded the kind of enterprise software that quietly runs companies: multi-tenant ERP, AI SaaS, operations platforms, reporting layers, and the integrations that make them all behave."
       />
 
@@ -100,6 +100,24 @@ function About() {
           className="space-y-8 text-lg leading-relaxed text-foreground/85 lg:col-span-7"
           data-reveal="right"
         >
+          <section className="border-l border-accent-gold/35 pl-6 sm:pl-8">
+            <div className="eyebrow">How I Think About Software</div>
+            <h2 className="mt-4 font-display text-3xl leading-tight text-foreground sm:text-4xl">
+              Software is a building people work inside every day.
+            </h2>
+            <div className="mt-6 space-y-6 text-foreground/82">
+              <p>
+                Most people only see dashboards, approvals, reports, and customer records. They do
+                not need to think about what is underneath. I do.
+              </p>
+              <p>
+                Who gets into which room. Which doors need to stay locked. Where the wiring runs.
+                Where the plumbing connects. And whether the foundation will still hold when the
+                business gets bigger, busier, and more complicated.
+              </p>
+            </div>
+          </section>
+
           <p>
             My work lives in the layer between business intent and dependable software. Approvals
             that route correctly. Numbers that tie back to source. Workflows that survive their

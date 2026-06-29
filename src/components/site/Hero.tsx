@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import heroPortrait from "@/assets/hero/johnathan-profile.jpg";
 
 const proofPoints = [
   { label: "Architecture", value: "Multi-Tenant ERP and SaaS platforms" },
@@ -11,9 +12,12 @@ export function Hero() {
     <section className="relative isolate min-h-svh w-full overflow-hidden bg-background">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[linear-gradient(135deg,oklch(0.075_0.006_70)_0%,oklch(0.12_0.008_75)_48%,oklch(0.18_0.014_78)_100%)]" />
+        <div aria-hidden="true" className="hero-portrait-frame">
+          <img src={heroPortrait} alt="" className="hero-portrait-image" />
+        </div>
         <div
           aria-hidden="true"
-          className="hero-architect absolute top-[18svh] right-[-28vw] h-[58svh] w-[92vw] rounded-[2px] border border-accent-gold/10 bg-[linear-gradient(135deg,oklch(0.22_0.012_76/0.18),transparent_62%)] opacity-60 [mask-image:linear-gradient(90deg,transparent_0%,black_42%,black_82%,transparent_100%)] sm:right-[-22vw] md:top-[12svh] md:right-[-12vw] md:h-[70svh] md:w-[58vw] lg:right-[-6vw] lg:w-[50vw]"
+          className="hero-architect absolute top-[18svh] right-[-18vw] h-[58svh] w-[82vw] rounded-[2px] border border-accent-gold/10 bg-[linear-gradient(135deg,oklch(0.22_0.012_76/0.14),transparent_62%)] opacity-45 [mask-image:linear-gradient(90deg,transparent_0%,black_38%,black_82%,transparent_100%)] sm:right-[-14vw] md:top-[12svh] md:right-[-6vw] md:h-[70svh] md:w-[56vw] lg:right-[2vw] lg:w-[45vw]"
         >
           <div className="absolute inset-8 border border-border-strong/35" />
           <div className="hero-line absolute inset-x-14 top-[18%] h-px bg-gradient-to-r from-transparent via-accent-gold/60 to-transparent" />
@@ -26,7 +30,7 @@ export function Hero() {
           <div className="hero-node absolute left-[72%] top-[55%] h-2 w-2 rounded-full bg-accent-gold/60 [animation-delay:1650ms]" />
           <div className="hero-line absolute right-[14%] bottom-[16%] h-px w-28 bg-accent-gold/50 [animation-delay:1500ms]" />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(0.075_0.006_70/0.98)_0%,oklch(0.075_0.006_70/0.86)_34%,oklch(0.075_0.006_70/0.48)_62%,oklch(0.075_0.006_70/0.78)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(0.075_0.006_70/0.99)_0%,oklch(0.075_0.006_70/0.88)_36%,oklch(0.075_0.006_70/0.36)_62%,oklch(0.075_0.006_70/0.58)_100%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_76%_34%,oklch(0.76_0.075_82/0.18)_0%,transparent_42%),radial-gradient(ellipse_at_18%_70%,oklch(0.62_0.04_210/0.13)_0%,transparent_48%)]" />
         <div className="absolute inset-0 grid-lines opacity-[0.025]" />
         <div className="absolute top-28 bottom-20 left-[52%] hidden w-px bg-gradient-to-b from-transparent via-accent-gold/35 to-transparent lg:block" />
@@ -38,21 +42,20 @@ export function Hero() {
         <div className="max-w-[48rem] reveal">
           <div className="flex items-center gap-3 eyebrow text-[0.62rem] tracking-[0.14em] text-accent-gold sm:text-[0.72rem] sm:tracking-[0.18em]">
             <span className="inline-block h-px w-8 shrink-0 bg-accent-gold sm:w-10" />
-            <span className="sm:hidden">Multi-Tenant Systems</span>
+            <span className="sm:hidden">Senior Engineer</span>
             <span className="hidden sm:inline">
-              Multi-Tenant ERP - SaaS Architecture - Enterprise Systems
+              Senior Engineer for Multi-Tenant ERP, SaaS, and AI-native systems
             </span>
           </div>
 
           <h1 className="mt-5 max-w-[13ch] font-display text-[2.65rem] leading-[1.02] text-balance sm:mt-6 sm:text-6xl md:text-7xl lg:text-[4.45rem]">
-            <span className="text-gradient whitespace-nowrap">Multi-Tenant</span> ERP and AI-native
-            SaaS.
+            Software is a <span className="text-gradient">building</span> people work inside every
+            day.
           </h1>
 
           <p className="mt-5 max-w-[39rem] text-[0.98rem] leading-7 text-foreground/75 sm:mt-7 sm:text-base sm:leading-8 md:text-lg">
-            I design secure, tenant-aware platforms where data isolation, role-based access,
-            workflows, reporting, and compliance hold up across many customers without sacrificing
-            speed or maintainability.
+            I design the rooms, locks, wiring, and foundations behind secure multi-tenant platforms,
+            so growing businesses can operate with clarity, control, and confidence.
           </p>
 
           <div className="mt-8 grid max-w-[22rem] grid-cols-2 items-center gap-3 sm:mt-10 sm:flex sm:max-w-none sm:flex-wrap">
