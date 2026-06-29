@@ -54,8 +54,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-5 max-w-[39rem] text-[0.98rem] leading-7 text-foreground/75 sm:mt-7 sm:text-base sm:leading-8 md:text-lg">
-            I design the rooms, locks, wiring, and foundations behind secure multi-tenant platforms,
-            so growing businesses can operate with clarity, control, and confidence.
+            I design and build the rooms, locks, wiring, and foundations behind secure multi-tenant
+            platforms, so growing businesses can operate with clarity, control, and confidence.
           </p>
 
           <div className="mt-8 grid max-w-[22rem] grid-cols-2 items-center gap-3 sm:mt-10 sm:flex sm:max-w-none sm:flex-wrap">
